@@ -1,0 +1,319 @@
+<style>
+body {
+    background: rgb(248, 248, 248);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: century gothic;
+}
+
+    .header ul {
+        list-style: none;
+        text-align: end;
+    }
+
+    .header ul li {
+        display: inline-block;
+        position: relative;
+        z-index: 100;
+    }
+
+    .header ul li a {
+        display: block;
+        padding: 20px 25px;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .header ul li ul.dropdown li {
+        display: block;
+    }
+
+    .header ul li ul.dropdown {
+        width: 200px;
+        background: rgba(46, 49, 51, 0.5);
+        position: absolute;
+        z-index: 999;
+        display: none;
+    }
+
+    .header ul li a:hover {
+        color: rgb(242, 173, 29);
+        transition-delay: 0.2s;
+    }
+
+    .header ul li:hover ul.dropdown {
+        display: block;
+        transition-delay: 0.2s;
+    }
+
+    .logo {
+        width: 40px;
+        padding-left: 30px;
+        padding-bottom: 20px;
+    }
+
+    .top-text {
+        background-color: rgba(46, 49, 51, 0.9);
+        color: white;
+        padding: 200px 0px 150px 50px;
+        margin-top: -127px;
+        position: relative;
+    }
+
+    .top-text h1 {
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    video {
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;  
+        z-index: -2;         
+    }
+
+    .experince {
+        color: rgb(242, 173, 29);
+    }
+
+    .body-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 40px;
+        align-items: center;
+        background: rgb(242, 173, 29);
+        padding: 50px;
+    }
+
+    .body-grid::hover {
+        mous
+    }
+
+    .body-grid h1 {
+        color: rgb(46, 49, 51);
+        text-align: center;
+        display: block;
+    }
+
+    .body-grid img {
+        width: 100%; 
+    }
+
+    .our-services {
+        font-size: 30px;
+        text-align: center;
+        color: rgb(46, 49, 51);
+
+    }
+
+    .it-grid {
+        background-color: rgb(46, 49, 51);
+        padding-top: 150px;
+        position: relative;
+        border-radius: 5px;
+    }
+
+    .it-text {
+        font-size: 40px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: rgb(242, 173, 29);
+    }
+
+    .graphics-grid {
+        background-color: rgb(46, 49, 51);
+        padding-top: 150px;
+        position: relative;
+        border-radius: 5px;
+    }
+
+    .graphics-text {
+        font-size: 40px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: rgb(242, 173, 29);  
+    }
+    
+    .web-grid {
+        background-color: rgb(46, 49, 51);
+        padding-top: 150px;
+        position: relative;
+        border-radius: 5px;
+    }
+
+    .web-text {
+        font-size: 40px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: rgb(242, 173, 29);  
+    }
+            
+    .services-grid {
+        background-color: rgb(46, 49, 51);
+        padding-top: 150px;
+        position: relative;
+        border-radius: 5px;
+    }
+
+    .services-text {
+        font-size: 40px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: rgb(242, 173, 29);  
+    }
+                    
+    .stationary-grid {
+        background-color: rgb(46, 49, 51);
+        padding-top: 150px;
+        position: relative;
+        border-radius: 5px;
+    }
+
+    .stationary-text {
+        font-size: 40px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: rgb(242, 173, 29);  
+    }
+                            
+    .supply-grid {
+        background-color: rgb(46, 49, 51);
+        padding-top: 150px;
+        position: relative;
+        border-radius: 5px;
+    }
+
+    .supply-text {
+        font-size: 40px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: rgb(242, 173, 29);  
+    }
+
+    @media (max-width: 800px) {
+        .body-grid{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .body-grid{
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .grid-img img {
+        width: 100%;
+        background-color: rgb(46, 49, 51);
+        padding-top: 150px;
+        border-radius: 5px; 
+    }
+
+    .grid-img p {
+        font-size: 40px;
+        color: white;
+    }
+
+    .about-why {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 40px 80px;
+        align-items: center;
+        text-align: justify;
+        font-size: 18px;
+        line-height: 30px;
+        column-gap: 30px;
+        color: rgb(46, 49, 51);
+    }
+
+    @media (max-width: 800px) {
+        .about-why{
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .about-png img,
+    .why-png img {
+        width: 40%;
+        padding-left: 100px;
+    }
+
+    .about-text {
+        margin-bottom: 30px;
+        color: rgb(46, 49, 51);
+    }
+
+    .vision-mission {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 100px 80px;
+        background-color: rgba(46, 49, 51, 0.9);
+        color: white;
+        column-gap: 30px;
+        text-align: justify;
+        position: relative;
+    }
+
+    @media (max-width: 800px) {
+        .vision-mission{
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .vision-mission h1 {
+        font-size: 20px;
+        line-height: 30px;
+        color: rgb(242, 173, 29);
+        padding-top: 40px;
+    }
+
+    .logos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 35px;
+    }
+
+    .logos img {
+        width: 10%;
+        height: fit-content;
+    }
+
+    .contact-details {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgb(46, 49, 51);
+        padding: 80px 50px;
+        color: white;
+        line-height: 35px;
+        
+    }
+
+    .contact-details a img {
+        width: 20px;
+        margin-bottom: -290px;
+        align-items: baseline;
+    }
+
+    .contact-details p {
+        font-size: 25px;
+        color: rgb(242, 173, 29);
+    }
+</style>
